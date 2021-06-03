@@ -17,7 +17,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 @org.springframework.stereotype.Service
-public class TriangleService implements Service<TriangleParameters, Triangle> {
+public class TriangleService implements Service {
 
     private final TriangleHash hash;
     private final AppealsCounter appealsCounter;

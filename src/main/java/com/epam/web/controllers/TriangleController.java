@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class TriangleController {
 
     @Autowired
-    private Service<TriangleParameters, Triangle> service;
+    private Service service;
 
     @GetMapping("/calculateTriangle")
     public TriangleParameters calculateTriangle(@RequestParam double firstSide,

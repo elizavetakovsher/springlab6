@@ -43,10 +43,10 @@ public class TriangleService implements Service {
         if(hash.isAlreadyHashed(entity)){
             return hash.getParameters(entity);
         }
-        Calculator<Triangle> calculator=new TriangleCalculator();
+        Calculator calculator = new TriangleCalculator();
         double perimeter=calculator.calculatePerimeter(entity);
         double square=calculator.calculateSquare(entity);
-        TriangleParameters triangleParameters=new TriangleParameters(square,perimeter);
+        TriangleParameters triangleParameters = new TriangleParameters(square,perimeter);
         hash.addToMap(entity,triangleParameters);
         return triangleParameters;
     }

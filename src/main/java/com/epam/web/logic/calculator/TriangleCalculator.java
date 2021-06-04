@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 @Component
-public class TriangleCalculator implements Calculator<Triangle> {
+public class TriangleCalculator implements Calculator {
     private TriangleValidator triangleValidator = new TriangleValidator();
     private Logger logger = LoggerFactory.getLogger(TriangleCalculator.class);
 
